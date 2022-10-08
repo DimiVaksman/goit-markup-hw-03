@@ -11,23 +11,25 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="container nav">
-        <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-        <ul class="nav-links list">
-          <li class="item-nav">
-            <a class="nav-links" href="./index.html">Студія</a>
-          </li>
-          <li class="item-nav">
-            <a class="nav-links current" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="item-nav"><a class="nav-links" href="">Контакти</a></li>
-        </ul>
-        <ul class="header-addres-auth">
+      <div class="container header">
+        <nav class="nav">
+          <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+          <ul class="nav-links list">
+            <li class="item-nav">
+              <a class="nav-links " href="./index.html">Студія</a>
+            </li>
+            <li class="item-nav">
+              <a class="nav-links current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="item-nav"><a class="nav-links" href="">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header-addres-auth list">
           <li class="item-nav">
             <a class="header-addres" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -39,14 +41,12 @@
             >
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
     <main>
-      <section>
-        <div class="container filters">
+      <section class="section">
           <h1 class="visually-hidden">Фільтри</h1>
-          <div class="filters-list">
-            <ul class="ul-list">
+            <ul class="filters-list container">
               <li class="filters-item">
                 <button class="filters-button all" type="button">Усі</button>
               </li>
@@ -63,9 +63,7 @@
                 <button class="filters-button" type="button">Маркетинг</button>
               </li>
             </ul>
-          </div>
-          <div class="list-all">
-            <ul class="pictures-filter list">
+            <ul class="pictures-filter list-all container list">
               <li class="filters-image-item"> 
                 <img
                   src="./image/portfolio1.jpg"
@@ -73,8 +71,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Технокряк</h2>
-                <p class="portfolio-text-two">Веб-сайт</p>
+                <div class="portfolio-about">
+                  <h2 class="portfolio-title">Технокряк</h2>
+                  <p class="portfolio-text-two">Веб-сайт</p>
+                </div>
               </li>
               <li class="filters-image-item">
                 <img
@@ -83,8 +83,11 @@
                   width="370"
                   height="294"
                 />
+
+                <div class="portfolio-about">
                 <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
                 <p class="portfolio-text-two">Дизайн</p>
+                </div>
               </li>
               <li class="filters-image-item">
                 <img
@@ -93,8 +96,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Ресторан Seafood</h2>
-                <p class="portfolio-text-two">Додаток</p>
+                <div class="portfolio-about">
+                  <h2 class="portfolio-title">Ресторан Seafood</h2>
+                  <p class="portfolio-text-two">Додаток</p>
+                </div>
               </li>
               <li class="filters-image-item">
                 <img
@@ -103,8 +108,10 @@
                   width="370"
                   height="294"
                 />
+                <div class="portfolio-about">
                 <h2 class="portfolio-title">Проєкт Prime</h2>
                 <p class="portfolio-text-two">Маркетинг</p>
+                </div>
               </li>
               <li class="filters-image-item">
                 <img
@@ -113,8 +120,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Проєкт Prime</h2>
-                <p class="portfolio-text-two">Додаток</p>
+                <div class="portfolio-about">
+                  <h2 class="portfolio-title">Проєкт Prime</h2>
+                  <p class="portfolio-text-two">Додаток</p>
+                </div>
               </li>
               <li class="filters-image-item">
                 <img
@@ -123,8 +132,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Проєкт Prime</h2>
-                <p class="portfolio-text-two">Веб-сайт</p>
+                <div class="portfolio-about">
+                  <h2 class="portfolio-title">Проєкт Prime</h2>
+                  <p class="portfolio-text-two">Веб-сайт</p>
+                </div>
               </li>
               <li class="filters-image-item">
                 <img
@@ -133,8 +144,10 @@
                   width="370"
                   height="294"
                 />
+                <div class="portfolio-about">
                 <h2 class="portfolio-title">Проєкт Prime</h2>
                 <p class="portfolio-text-two">Дизайн</p>
+                </div>
               </li>
               <li class="filters-image-item">
                 <img
@@ -143,8 +156,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Проєкт Prime</h2>
-                <p class="portfolio-text-two">Маркетинг</p>
+                <div class="portfolio-about">
+                  <h2 class="portfolio-title">Проєкт Prime</h2>
+                  <p class="portfolio-text-two">Маркетинг</p>
+                </div>
               </li>
               <li class="filters-image-item">
                 <img
@@ -153,19 +168,19 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Проєкт Prime</h2>
-                <p class="portfolio-text-two">Додаток</p>
+                <div class="portfolio-about">
+                  <h2 class="portfolio-title">Проєкт Prime</h2>
+                  <p class="portfolio-text-two">Додаток</p>
+                </div>
               </li>
             </ul>
-          </div>
-        </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer-section">
       <div class="container">
         <a class="logo-footer" href="./index.html"><span>Web</span>Studio</a>
         <address class="footer-addres">
-          <ul class="list">
+          <ul class="footer-list list">
             <li class="footer-item">
               <a
                 class="map"

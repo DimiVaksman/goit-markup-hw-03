@@ -11,22 +11,24 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="container  nav">
-        <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-        <ul class="nav-links list">
-          <li class="item-nav">
-            <a class="nav-links current" href="./index.html">Студія</a>
-          </li>
-          <li class="item-nav">
-            <a class="nav-links" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="item-nav"><a class="nav-links" href="">Контакти</a></li>
-        </ul>
+      <div class="container header">
+        <nav class="nav">
+          <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+          <ul class="nav-links list">
+            <li class="item-nav">
+              <a class="nav-links current" href="./index.html">Студія</a>
+            </li>
+            <li class="item-nav">
+              <a class="nav-links" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="item-nav"><a class="nav-links" href="">Контакти</a></li>
+          </ul>
+        </nav>
         <ul class="header-addres-auth list">
           <li class="item-nav">
             <a class="header-addres" href="mailto:info@devstudio.com"
@@ -39,19 +41,18 @@
             >
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="container main-hero">
+      <section class="hero section">
+        <div class="container">
           <h1 class="hero-tittle">
-            Ефективні рішення для <br />
-            вашого бізнесу
+            Ефективні рішення для вашого бізнесу
           </h1>
           <button class="hero-button" type="button">Замовити послугу</button>
         </div>
       </section>
-      <section class="ouer-works">
+      <section class="ouer-works section">
         <div class="container ouer-works-section">
           <h2 class="visually-hidden">Нащі особливості</h2>
           <ul class="ouer-works-list list">
@@ -86,7 +87,7 @@
           </ul>
         </div>
       </section>
-      <section class="what-we-do">
+      <section class="what-we-do section">
         <div class="container">
           <h2 class="what-we-do-tittle">Чим ми займаємося</h2>
           <ul class="what-we-do-list list">
@@ -120,7 +121,7 @@
           </ul>
         </div>
       </section>
-      <section class="ouer-team">
+      <section class="ouer-team section">
         <div class="container">
           <h2 class="ouer-team-tittle">Наша команда</h2>
           <ul class="ouer-team-tittle-list list">
@@ -132,8 +133,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-tittle">Ігор Дем'яненко</h3>
-              <p class="ouer-taem-text">Product Designer</p>
+              <div class="crew-text">
+                <h3 class="team-tittle">Ігор Дем'яненко</h3>
+                <p class="ouer-taem-text">Product Designer</p>
+              </div>
             </li>
             <li class="ouer-team-item">
               <img
@@ -143,8 +146,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-tittle">Ольга Рєпіна</h3>
-              <p class="ouer-taem-text">Frontend Developer</p>
+              <div class="crew-text">
+                <h3 class="team-tittle">Ольга Рєпіна</h3>
+                <p class="ouer-taem-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="ouer-team-item">
               <img
@@ -154,8 +159,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-tittle">Микола Тарасов</h3>
-              <p class="ouer-taem-text">Marketing</p>
+              <div class="crew-text">
+                <h3 class="team-tittle">Микола Тарасов</h3>
+                <p class="ouer-taem-text">Marketing</p>
+              </div>
             </li>
             <li class="ouer-team-item">
               <img
@@ -165,14 +172,16 @@
                 width="270"
                 height="260"
               />
+              <div class="crew-text">
               <h3 class="team-tittle">Михайло Єрмаков</h3>
               <p class="ouer-taem-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer-section">
       <div class="container">
         <a class="logo-footer" href="./index.html"><span>Web</span>Studio</a>
         <address class="footer-addres">
